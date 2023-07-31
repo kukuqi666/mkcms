@@ -1,0 +1,10 @@
+<?php 
+include('system/inc.php');
+$sex=$_GET['sex'];
+$area=$_GET['area'];
+$page=$_GET['page'];
+if(empty($page)){$page=1;}
+$url=$mkcms_domain.'/json/getstar.php?sex='.$sex.'&area='.$area.'&page='.$page;
+$list=json_decode(fileget2($url,0),true);
+$numcount=$list['num']['numcount'];
+include('template/'.$mkcms_bdyun.'/actor.php');?>

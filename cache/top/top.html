@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/template/jingpin/css/stui_block.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/stui_default.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/iconfont.css" type="text/css">
+<link rel="stylesheet" href="/template/jingpin/css/aui.css" type="text/css">
+<script type="text/javascript" src="/template/jingpin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/stui_default.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/stui_block.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/submit_res.js"></script>
+<script type="text/javascript" src="//at.alicdn.com/t/font_1486157_6uw53bh8p6l.js"></script>
+<script type="text/javascript" src="/template/jingpin/js/layui/layui.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+body{background-repeat:repeat;background-size:inherit;background-attachment:fixed;background-position:center center;background: url(); }
+.stui-header__logo .logo {display: block;width: 150px;height: 50px;background: url(/images/logo.png) no-repeat;background-position: 50% 50%;background-size: cover}@media (max-width:767px){body:before{background: url() center 0 no-repeat; background-attachment: fixed;background-size: cover}.stui-header__top{ min-height: 50px}.stui-header__logo{ margin-top: 10px; margin-left: 10px}.layui-layer {width: 90% !important;top: 40px !important;left: 5% !important}}@media (max-width: 1023px){ .stui-header__logo .logo {width: 90px;height: 30px;background: url(/images/logo.png) no-repeat;background-position: 50% 50%;background-size: cover}}
+</style><title>影视排行榜-百度风云榜-搜狗影视榜-MM影视 - 在线免费高清电影！</title>
+<meta name="keywords" content="影视排行榜,电影,视频大全,在线高清电影,付费电影,免费电影,剧集,电影,在线观看,VIP高清电影直播">
+<meta name="description" content="影视排行榜,MM影视，是专门做剧集,电影等在线播放服务，本页面提供电影的相关内容。">
+<meta name="referrer" content="same-origin">
+<style type="text/css">.stui-vodlist__thumb{padding-top: 60%}.stui-vodlist__text li a{padding: 5px 0 5px}</style>
+<body>
+<div id="wrap" class="flex-wrap flex-vertical">
+<div id="main" class="flex-con">
+<!--head-->
+<header class="stui-header__top clearfix" id="header-top">
+<div class="container">
+<div class="row">
+<div class="stui-header_bd clearfix">
+<div class="stui-header__logo">
+<a class="logo" href="/index.html"></a>
+</div>
+<ul class="stui-header__menu">
+<li class=""><a href="/index.html">首页</a></li>
+<li class=" hidden-xs"><a href="/movie.html">电影</a></li>
+<li class=" hidden-xs"><a href="/tv.html">剧集</a></li>
+<li class=" hidden-xs"><a href="/dongman.html">动漫</a></li>
+<li class=" hidden-xs"><a href="/zongyi.html">综艺</a></li>
+<li><a href="javascript:;">更多 <i class="icon iconfont icon-moreunfold"></i></a>
+<ul class="dropdown">
+<li class=""><a href="/movie.html">电影</a></li>
+<li class=""><a href="/tv.html">剧集</a></li>
+<li class=""><a href="/dongman.html">动漫</a></li>
+<li class=""><a href="/zongyi.html">综艺</a></li>
+<li class=""><a href="/cx.html">尝鲜</a></li><li class=""><a href="/music.html">音乐</a></li>
+<li class=""><a href="/mv.html">MV</a></li><li class=""><a href="/hy.html">虎牙</a></li>
+<li class=""><a href="/yy.html">美女</a></li>
+<li class=""><a href="/actor.html">演员</a></li>
+<li class=""><a href="/news.html">资讯</a></li>
+<li class=""><a href="/star.html">热搜榜</a></li>
+<li class="active"><a href="/top.html">影视榜</a></li>
+<li class=""><a href="/xjj.html">小姐姐</a></li>
+<li class=""><a href="/shop.html">优惠券</a></li>
+<li class=""><a href="/dy.html">抖音解析</a></li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript" src="/template/jingpin/js/jquery.autocomplete.js"></script>
+<div class="stui-header__search">
+<input type="text" id="wd" name="wd" class="mac_wd form-control" value="" placeholder="输入明星、影片关键词" onkeydown='if(event.keyCode==13){submi.click()}'/>
+<button class="submit" id="submi" type="submit" onclick="submit()"><i class="icon iconfont icon-search"></i></button>
+<a class="search-close visible-xs" href="javascript:;"><i class="icon iconfont icon-close"></i></a>
+</div>
+<ul class="stui-header__user">
+<li>
+<a href="/ucenter/login.html" title="账户"><i class="icon iconfont icon-account"></i></a>
+</li>
+<li>
+<a href="javascript:;"><i class="icon iconfont icon-clock"></i></a>
+<div class="dropdown">
+<h5 class="margin-0 text-muted">
+<a class="historyclean text-muted pull-right" href="">清空</a>播放记录
+</h5>
+<ul class="history clearfix" id="stui_history"></ul>
+</div>
+</li>
+<li class="hidden-xs">
+<a href="/book.html" title="留言板"><i class="icon iconfont icon-comments"></i></a>
+</li>
+<li class="hidden-xs">
+<a href="/app.html" title="APP下载"><i class="icon iconfont icon-icondownload"></i></a>
+</li>
+<li class="visible-xs">
+<a class="open-search" href="javascript:;"><i class="icon iconfont icon-search"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<script type="text/javascript">
+	$(".stui-header__user li,.stui-header__menu li").click(function(){
+		$(this).find(".dropdown").toggle();
+	});
+	$(".open-search").click(function(){
+		var Seacrh=$(".stui-header__search");
+		Seacrh.addClass("active").siblings().hide();
+		Seacrh.find(".form-control").focus();
+		$(".search-close").click(function(){
+			Seacrh.removeClass("active").siblings().show();
+		});
+	});
+</script>
+<!--head--><div class="container">
+  <div class="row">
+    <div class="stui-pannel stui-pannel-bg clearfix">
+	<div class="stui-pannel-box">
+	    <div class="stui-pannel_hd">
+	        <div class="stui-pannel__head active bottom-line clearfix">
+	        <h3 class="title"><svg class="iconm" aria-hidden="true"><use xlink:href="#icon-remen"></use></svg>影视风云榜</h3>
+		    </div>
+	</div>
+	</div>
+   <div class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+            <div class="stui-pannel__head active bottom-line clearfix">
+			<a class="more text-muted pull-right" href="movie.html">更多 <i class="icon iconfont icon-more"></i></a>
+            <h3 class="title">电影</h3>
+            </div>
+			<div class="stui-pannel_bd clearfix">
+			<ul class="stui-vodlist__text active col-pd clearfix" style="box-shadow: 0 2px 10px rgba(0,0,0,.05);">
+<li class="padding-0"><div class="stui-vodlist__box">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="/vod/m/gKfrYRH6S0j0TB.html" title="黑狐之绝地营救" alt="黑狐之绝地营救" data-original="https://p8.qhimg.com/d/dy_6a94a4a95b65c5e918d1786a1be57cc1." style="padding-top:60%;">
+<span class="play hidden-xs"></span>
+<span class="pic-text text-center">黑狐之绝地营救</span>
+<span class="pic-tag pic-tag-h">Top</span>
+<span class="pic-tag pic-tag-k">84,450℃</span>
+</a></div></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/faTkahH6S0X2TB.html" title="边缘行者">
+	<span class="am-badge am-round pull-left">1</span><span class="text-muted pull-right">68,659 ℃</span><em class="text-red"></em>&nbsp;边缘行者
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/f6LiZBH6Rnb6UB.html" title="熊出没·重返地球">
+	<span class="am-badge am-round pull-left">2</span><span class="text-muted pull-right">68,624 ℃</span><em class="text-red"></em>&nbsp;熊出没·重返地球
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/faXpYRH6Rnb4UR.html" title="狙击手 2022">
+	<span class="am-badge am-round pull-left">3</span><span class="text-muted pull-right">41,225 ℃</span><em class="text-red"></em>&nbsp;狙击手 2022
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/gqbqYhH6S0j5Sh.html" title="封神杨戬">
+	<span class="am-badge am-round pull-left">4</span><span class="text-muted pull-right">31,657 ℃</span><em class="text-red"></em>&nbsp;封神杨戬
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/hKPiZRH4QHP7Tx.html" title="战狼2">
+	<span class="am-badge am-round pull-left">5</span><span class="text-muted pull-right">31,438 ℃</span><em class="text-red"></em>&nbsp;战狼2
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/gKLrZxH6S0X6TB.html" title="绝地防线">
+	<span class="am-badge am-round pull-left">6</span><span class="text-muted pull-right">29,998 ℃</span><em class="text-red"></em>&nbsp;绝地防线
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/g6niZBH6Rnb8Th.html" title="长津湖之水门桥">
+	<span class="am-badge am-round pull-left">7</span><span class="text-muted pull-right">28,452 ℃</span><em class="text-red"></em>&nbsp;长津湖之水门桥
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/gaTmahH6S0b3SB.html" title="神秘海域 普通话版">
+	<span class="am-badge am-round pull-left">8</span><span class="text-muted pull-right">20,313 ℃</span><em class="text-red"></em>&nbsp;神秘海域 普通话版
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/f6voYhH6S0f1UB.html" title="别逼我动手">
+	<span class="am-badge am-round pull-left">9</span><span class="text-muted pull-right">19,226 ℃</span><em class="text-red"></em>&nbsp;别逼我动手
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/hqfiYxH6QXX2Sh.html" title="金刚川">
+	<span class="am-badge am-round pull-left">10</span><span class="text-muted pull-right">18,104 ℃</span><em class="text-red"></em>&nbsp;金刚川
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/g6fnZhH4SHT0UB.html" title="我不是药神">
+	<span class="am-badge am-round pull-left">11</span><span class="text-muted pull-right">17,818 ℃</span><em class="text-red"></em>&nbsp;我不是药神
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/gafiYRH6S0j0SR.html" title="新蝙蝠侠（普通话）">
+	<span class="am-badge am-round pull-left">12</span><span class="text-muted pull-right">16,353 ℃</span><em class="text-red"></em>&nbsp;新蝙蝠侠（普通话）
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/g6PjYhH6R0X4TB.html" title="侍神令">
+	<span class="am-badge am-round pull-left">13</span><span class="text-muted pull-right">15,637 ℃</span><em class="text-red"></em>&nbsp;侍神令
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/gKrlZBH3SHP2TB.html" title="非凡任务">
+	<span class="am-badge am-round pull-left">14</span><span class="text-muted pull-right">15,393 ℃</span><em class="text-red"></em>&nbsp;非凡任务
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/m/hqfnZRH6R0T0TB.html" title="送你一朵小红花">
+	<span class="am-badge am-round pull-left">15</span><span class="text-muted pull-right">14,885 ℃</span><em class="text-red"></em>&nbsp;送你一朵小红花
+</a></li>				 </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+          <div class="stui-pannel__head active bottom-line clearfix">
+			<a class="more text-muted pull-right" href="tv.html">更多 <i class="icon iconfont icon-more"></i></a>
+            <h3 class="title">电视</h3>
+            </div>
+			<div class="stui-pannel_bd clearfix">
+			<ul class="stui-vodlist__text active col-pd clearfix" style="box-shadow: 0 2px 10px rgba(0,0,0,.05);">
+<li class="padding-0"><div class="stui-vodlist__box">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="/vod/tv/QbJrbn7lTG8uMX.html" title="梦华录" alt="梦华录" data-original="https://p3.qhimg.com/d/dy_62ebe7701d3d97ab23c887916ed0f845." style="padding-top:60%;">
+<span class="play hidden-xs"></span>
+<span class="pic-text text-center">梦华录</span>
+<span class="pic-tag pic-tag-h">Top</span>
+<span class="pic-tag pic-tag-k">235,495℃</span>
+</a></div></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/QbFqc07lTG8oNX.html" title="传家">
+	<span class="am-badge am-round pull-left">1</span><span class="text-muted pull-right">150,541 ℃</span><em class="text-red"></em>&nbsp;传家
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/QLRoan7lTG8uNH.html" title="加油！妈妈">
+	<span class="am-badge am-round pull-left">2</span><span class="text-muted pull-right">136,416 ℃</span><em class="text-red"></em>&nbsp;加油！妈妈
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/PrNqcH7lTGHmOH.html" title="回廊亭">
+	<span class="am-badge am-round pull-left">3</span><span class="text-muted pull-right">125,994 ℃</span><em class="text-red"></em>&nbsp;回廊亭
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/PrVqbX7lTGHnMH.html" title="遇见璀璨的你">
+	<span class="am-badge am-round pull-left">4</span><span class="text-muted pull-right">125,937 ℃</span><em class="text-red"></em>&nbsp;遇见璀璨的你
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/QLdxcX7lTG8uOH.html" title="妻子的选择">
+	<span class="am-badge am-round pull-left">5</span><span class="text-muted pull-right">123,544 ℃</span><em class="text-red"></em>&nbsp;妻子的选择
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/RLRubH7lTG8pNH.html" title="法医秦明之读心者">
+	<span class="am-badge am-round pull-left">6</span><span class="text-muted pull-right">60,520 ℃</span><em class="text-red"></em>&nbsp;法医秦明之读心者
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/QLVxaX7lTGHsNX.html" title="白色强人2">
+	<span class="am-badge am-round pull-left">7</span><span class="text-muted pull-right">51,805 ℃</span><em class="text-red"></em>&nbsp;白色强人2
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/PLdqbX7lTGHmMH.html" title="花朝秋月夜">
+	<span class="am-badge am-round pull-left">8</span><span class="text-muted pull-right">49,055 ℃</span><em class="text-red"></em>&nbsp;花朝秋月夜
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/PLNtbn7lTG0lNX.html" title="没有工作的一年">
+	<span class="am-badge am-round pull-left">9</span><span class="text-muted pull-right">46,391 ℃</span><em class="text-red"></em>&nbsp;没有工作的一年
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/Pbdwan7lTG8pN3.html" title="暗夜行者">
+	<span class="am-badge am-round pull-left">10</span><span class="text-muted pull-right">41,513 ℃</span><em class="text-red"></em>&nbsp;暗夜行者
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/Q4ZtcH7lTG8uMH.html" title="买定离手我爱你">
+	<span class="am-badge am-round pull-left">11</span><span class="text-muted pull-right">39,134 ℃</span><em class="text-red"></em>&nbsp;买定离手我爱你
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/PbZrbn7lTGDmMn.html" title="林深见鹿">
+	<span class="am-badge am-round pull-left">12</span><span class="text-muted pull-right">32,445 ℃</span><em class="text-red"></em>&nbsp;林深见鹿
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/QLNtbX7lTG8oMX.html" title="欢迎光临">
+	<span class="am-badge am-round pull-left">13</span><span class="text-muted pull-right">26,220 ℃</span><em class="text-red"></em>&nbsp;欢迎光临
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/RbRoaK4aRm8oNH.html" title="爱上查美乐">
+	<span class="am-badge am-round pull-left">14</span><span class="text-muted pull-right">22,823 ℃</span><em class="text-red"></em>&nbsp;爱上查美乐
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/tv/PrRtcH7lTG8sMH.html" title="警察荣誉">
+	<span class="am-badge am-round pull-left">15</span><span class="text-muted pull-right">18,577 ℃</span><em class="text-red"></em>&nbsp;警察荣誉
+</a></li>				 </ul>
+          </div>
+        </div>
+<div class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+            <div class="stui-pannel__head active bottom-line clearfix">
+			<a class="more text-muted pull-right" href="zongyi.html">更多 <i class="icon iconfont icon-more"></i></a>
+            <h3 class="title">综艺</h3>
+            </div>
+			<div class="stui-pannel_bd clearfix">
+			<ul class="stui-vodlist__text active col-pd clearfix" style="box-shadow: 0 2px 10px rgba(0,0,0,.05);">
+<li class="padding-0"><div class="stui-vodlist__box">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="/vod/va/YsAkbHN072Q7Ez.html" title="奔跑吧 第六季" alt="奔跑吧 第六季" data-original="https://p3.qhimg.com/d/dy_c63d4ab569ea46a1768f213e9dc67a91." style="padding-top:60%;">
+<span class="play hidden-xs"></span>
+<span class="pic-text text-center">奔跑吧 第六季</span>
+<span class="pic-tag pic-tag-h">Top</span>
+<span class="pic-tag pic-tag-k">164,823℃</span>
+</a></div></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/aMAoa3N072QBFD.html" title="乘风破浪 第三季">
+	<span class="am-badge am-round pull-left">1</span><span class="text-muted pull-right">152,705 ℃</span><em class="text-red"></em>&nbsp;乘风破浪 第三季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/ZscmcXNzAJk2Ej.html" title="向往的生活 第六季">
+	<span class="am-badge am-round pull-left">2</span><span class="text-muted pull-right">151,543 ℃</span><em class="text-red"></em>&nbsp;向往的生活 第六季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/Y85naXN07JE6Ez.html" title="花儿与少年 第四季">
+	<span class="am-badge am-round pull-left">3</span><span class="text-muted pull-right">82,838 ℃</span><em class="text-red"></em>&nbsp;花儿与少年 第四季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/Z8UnbXN072c4ED.html" title="萌探探探案第2季">
+	<span class="am-badge am-round pull-left">4</span><span class="text-muted pull-right">55,798 ℃</span><em class="text-red"></em>&nbsp;萌探探探案第2季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/Y8cna3NzAJk3Dj.html" title="声生不息">
+	<span class="am-badge am-round pull-left">5</span><span class="text-muted pull-right">48,848 ℃</span><em class="text-red"></em>&nbsp;声生不息
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/ZcEpbnN072M7Dz.html" title="爸爸当家">
+	<span class="am-badge am-round pull-left">6</span><span class="text-muted pull-right">33,840 ℃</span><em class="text-red"></em>&nbsp;爸爸当家
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/Ys5nb3NzA2A6ED.html" title="王牌对王牌 第七季">
+	<span class="am-badge am-round pull-left">7</span><span class="text-muted pull-right">31,168 ℃</span><em class="text-red"></em>&nbsp;王牌对王牌 第七季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/YsElcXNzA2E8FD.html" title="喜欢你我也是 第三季">
+	<span class="am-badge am-round pull-left">8</span><span class="text-muted pull-right">19,895 ℃</span><em class="text-red"></em>&nbsp;喜欢你我也是 第三季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/acUpaadv7JMAED.html" title="爱情保卫战">
+	<span class="am-badge am-round pull-left">9</span><span class="text-muted pull-right">18,588 ℃</span><em class="text-red"></em>&nbsp;爱情保卫战
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/YsgkbHN07JI2FD.html" title="夏日音乐会">
+	<span class="am-badge am-round pull-left">10</span><span class="text-muted pull-right">18,415 ℃</span><em class="text-red"></em>&nbsp;夏日音乐会
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/Z8cobHNzA2I7ET.html" title="追星星的人第2季">
+	<span class="am-badge am-round pull-left">11</span><span class="text-muted pull-right">15,373 ℃</span><em class="text-red"></em>&nbsp;追星星的人第2季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/ZsAobHNz8pg7FD.html" title="大侦探 第七季">
+	<span class="am-badge am-round pull-left">12</span><span class="text-muted pull-right">15,215 ℃</span><em class="text-red"></em>&nbsp;大侦探 第七季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/Yscmaqtv82I2DD.html" title="今日说法">
+	<span class="am-badge am-round pull-left">13</span><span class="text-muted pull-right">14,283 ℃</span><em class="text-red"></em>&nbsp;今日说法
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/aMcnbHN072k8Dz.html" title="开始推理吧">
+	<span class="am-badge am-round pull-left">14</span><span class="text-muted pull-right">11,943 ℃</span><em class="text-red"></em>&nbsp;开始推理吧
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/va/ZMQkcqhv8JA5Ej.html" title="新闻联播">
+	<span class="am-badge am-round pull-left">15</span><span class="text-muted pull-right">10,960 ℃</span><em class="text-red"></em>&nbsp;新闻联播
+</a></li>				 </ul>
+          </div>
+        </div>
+<div class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+            <div class="stui-pannel__head active bottom-line clearfix">
+			<a class="more text-muted pull-right" href="dongman.html">更多 <i class="icon iconfont icon-more"></i></a>
+            <h3 class="title">动漫</h3>
+            </div>
+			<div class="stui-pannel_bd clearfix">
+			<ul class="stui-vodlist__text active col-pd clearfix" style="box-shadow: 0 2px 10px rgba(0,0,0,.05);">
+<li class="padding-0"><div class="stui-vodlist__box">
+<a class="stui-vodlist__thumb lazyload img-shadow" href="/vod/ct/OUPkaZ7kNY7vDj.html" title="斗罗大陆" alt="斗罗大陆" data-original="https://p0.qhimg.com/d/dy_695e41b4208ee7f19ee1c741bb703d3d." style="padding-top:60%;">
+<span class="play hidden-xs"></span>
+<span class="pic-text text-center">斗罗大陆</span>
+<span class="pic-tag pic-tag-h">Top</span>
+<span class="pic-tag pic-tag-k">99,358℃</span>
+</a></div></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PEDscJ7lMoC0Cj.html" title="开心锤锤">
+	<span class="am-badge am-round pull-left">1</span><span class="text-muted pull-right">88,219 ℃</span><em class="text-red"></em>&nbsp;开心锤锤
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/QkXrcp7kLIWuCT.html" title="熊出没全集">
+	<span class="am-badge am-round pull-left">2</span><span class="text-muted pull-right">49,353 ℃</span><em class="text-red"></em>&nbsp;熊出没全集
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PEbqbZ7mMoCzCz.html" title="间谍过家家">
+	<span class="am-badge am-round pull-left">3</span><span class="text-muted pull-right">47,504 ℃</span><em class="text-red"></em>&nbsp;间谍过家家
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/QE4pbp7mMoKyCz.html" title="猪猪侠之超星五灵侠 第三季">
+	<span class="am-badge am-round pull-left">4</span><span class="text-muted pull-right">25,237 ℃</span><em class="text-red"></em>&nbsp;猪猪侠之超星五灵侠 第三季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/P0LoaZ7lLoSxDz.html" title="迷你特工队X">
+	<span class="am-badge am-round pull-left">5</span><span class="text-muted pull-right">25,138 ℃</span><em class="text-red"></em>&nbsp;迷你特工队X
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/P0frbZ7lMoK3CD.html" title="某天成为王的女儿">
+	<span class="am-badge am-round pull-left">6</span><span class="text-muted pull-right">24,217 ℃</span><em class="text-red"></em>&nbsp;某天成为王的女儿
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/QEPlaZ7mMoOxDz.html" title="西行纪 第4季">
+	<span class="am-badge am-round pull-left">7</span><span class="text-muted pull-right">17,550 ℃</span><em class="text-red"></em>&nbsp;西行纪 第4季
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/OkHkbJ7lLoSyCT.html" title="嘿基尼">
+	<span class="am-badge am-round pull-left">8</span><span class="text-muted pull-right">16,699 ℃</span><em class="text-red"></em>&nbsp;嘿基尼
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PEbnaZ7lNYa2CD.html" title="阿巳与小铃铛">
+	<span class="am-badge am-round pull-left">9</span><span class="text-muted pull-right">14,712 ℃</span><em class="text-red"></em>&nbsp;阿巳与小铃铛
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PkboaZ7mL4SwCD.html" title="特利迦奥特曼">
+	<span class="am-badge am-round pull-left">10</span><span class="text-muted pull-right">12,213 ℃</span><em class="text-red"></em>&nbsp;特利迦奥特曼
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PUbka57kMo32CT.html" title="会说话的家族合集">
+	<span class="am-badge am-round pull-left">11</span><span class="text-muted pull-right">11,804 ℃</span><em class="text-red"></em>&nbsp;会说话的家族合集
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PULkcp7mLYz1ED.html" title="吞噬星空">
+	<span class="am-badge am-round pull-left">12</span><span class="text-muted pull-right">10,766 ℃</span><em class="text-red"></em>&nbsp;吞噬星空
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/OkLmap7lLY3yDj.html" title="精诚的心群英传奇">
+	<span class="am-badge am-round pull-left">13</span><span class="text-muted pull-right">10,131 ℃</span><em class="text-red"></em>&nbsp;精诚的心群英传奇
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/OU4mbJ7mLI3uCD.html" title="奥特银河格斗 巨大阴谋中配版">
+	<span class="am-badge am-round pull-left">14</span><span class="text-muted pull-right">9,619 ℃</span><em class="text-red"></em>&nbsp;奥特银河格斗 巨大阴谋中配版
+</a></li><li class="col-xs-1 padding-0">
+	<a class="text-overflow" href="/vod/ct/PUPkbZ7kMoC0ED.html" title="捷德奥特曼 中文版">
+	<span class="am-badge am-round pull-left">15</span><span class="text-muted pull-right">8,553 ℃</span><em class="text-red"></em>&nbsp;捷德奥特曼 中文版
+</a></li>				 </ul>
+          </div>
+        </div>
+      </div>
+<div class="stui-pannel stui-pannel-bg clearfix">
+	<div class="stui-pannel-box">
+	<div class="stui-pannel_hd">
+	<div class="stui-pannel__head active bottom-line clearfix">
+	<h3 class="title">今日电影热搜排行榜</h3></div>
+	</div>
+	</div>
+	    <ul class="wprm">
+			<b>
+			<li><a href="seacher-奇异博士2：疯狂多元宇宙.html" title="奇异博士2：疯狂多元宇宙">奇异博士2：疯狂多元宇宙</a></li><li><a href="seacher-人生大事.html" title="人生大事">人生大事</a></li><li><a href="seacher-侏罗纪世界3.html" title="侏罗纪世界3">侏罗纪世界3</a></li><li><a href="seacher-一周的朋友.html" title="一周的朋友">一周的朋友</a></li><li><a href="seacher-侏罗纪世界.html" title="侏罗纪世界">侏罗纪世界</a></li><li><a href="seacher-我和我的祖国.html" title="我和我的祖国">我和我的祖国</a></li><li><a href="seacher-泰坦尼克号.html" title="泰坦尼克号">泰坦尼克号</a></li><li><a href="seacher-怦然心动.html" title="怦然心动">怦然心动</a></li><li><a href="seacher-花木兰.html" title="花木兰">花木兰</a></li><li><a href="seacher-边缘行者.html" title="边缘行者">边缘行者</a></li><li><a href="seacher-侏罗纪世界2:失落王国.html" title="侏罗纪世界2:失落王国">侏罗纪世界2:失落王国</a></li><li><a href="seacher-长津湖之水门桥.html" title="长津湖之水门桥">长津湖之水门桥</a></li><li><a href="seacher-倚天屠龙记之九阳神功.html" title="倚天屠龙记之九阳神功">倚天屠龙记之九阳神功</a></li><li><a href="seacher-神秘海域.html" title="神秘海域">神秘海域</a></li><li><a href="seacher-加勒比海盗4:惊涛怪浪.html" title="加勒比海盗4:惊涛怪浪">加勒比海盗4:惊涛怪浪</a></li><li><a href="seacher-奇异博士.html" title="奇异博士">奇异博士</a></li><li><a href="seacher-让子弹飞.html" title="让子弹飞">让子弹飞</a></li><li><a href="seacher-女教师.html" title="女教师">女教师</a></li><li><a href="seacher-海上钢琴师.html" title="海上钢琴师">海上钢琴师</a></li><li><a href="seacher-我和我的父辈.html" title="我和我的父辈">我和我的父辈</a></li><li><a href="seacher-我不是药神.html" title="我不是药神">我不是药神</a></li><li><a href="seacher-送你一朵小红花.html" title="送你一朵小红花">送你一朵小红花</a></li><li><a href="seacher-爱丽丝梦游仙境.html" title="爱丽丝梦游仙境">爱丽丝梦游仙境</a></li><li><a href="seacher-你好，李焕英.html" title="你好，李焕英">你好，李焕英</a></li><li><a href="seacher-前度.html" title="前度">前度</a></li><li><a href="seacher-大赢家.html" title="大赢家">大赢家</a></li><li><a href="seacher-扬名立万.html" title="扬名立万">扬名立万</a></li><li><a href="seacher-哥斯拉.html" title="哥斯拉">哥斯拉</a></li><li><a href="seacher-星际穿越.html" title="星际穿越">星际穿越</a></li><li><a href="seacher-倩女幽魂.html" title="倩女幽魂">倩女幽魂</a></li>		</b>
+	</ul>
+</div>
+<div class="stui-pannel stui-pannel-bg clearfix">
+	<div class="stui-pannel-box">
+	<div class="stui-pannel_hd">
+	<div class="stui-pannel__head active bottom-line clearfix">
+	<h3 class="title">今日电视剧热搜排行榜</h3></div>
+	</div>
+	</div>
+	    <ul class="wprm">
+			<b>
+			<li><a href="seacher-梦华录.html" title="梦华录">梦华录</a></li><li><a href="seacher-牛郎织女.html" title="牛郎织女">牛郎织女</a></li><li><a href="seacher-加油妈妈.html" title="加油妈妈">加油妈妈</a></li><li><a href="seacher-传家.html" title="传家">传家</a></li><li><a href="seacher-林深见鹿.html" title="林深见鹿">林深见鹿</a></li><li><a href="seacher-警察荣誉.html" title="警察荣誉">警察荣誉</a></li><li><a href="seacher-法医秦明之读心者.html" title="法医秦明之读心者">法医秦明之读心者</a></li><li><a href="seacher-通天塔.html" title="通天塔">通天塔</a></li><li><a href="seacher-甄嬛传.html" title="甄嬛传">甄嬛传</a></li><li><a href="seacher-回廊亭.html" title="回廊亭">回廊亭</a></li><li><a href="seacher-二进制恋爱.html" title="二进制恋爱">二进制恋爱</a></li><li><a href="seacher-斗罗大陆.html" title="斗罗大陆">斗罗大陆</a></li><li><a href="seacher-赘婿.html" title="赘婿">赘婿</a></li><li><a href="seacher-人世间.html" title="人世间">人世间</a></li><li><a href="seacher-暗夜行者.html" title="暗夜行者">暗夜行者</a></li><li><a href="seacher-斗破苍穹.html" title="斗破苍穹">斗破苍穹</a></li><li><a href="seacher-说英雄谁是英雄.html" title="说英雄谁是英雄">说英雄谁是英雄</a></li><li><a href="seacher-璀璨的你.html" title="璀璨的你">璀璨的你</a></li><li><a href="seacher-黑袍纠察队第一季.html" title="黑袍纠察队第一季">黑袍纠察队第一季</a></li><li><a href="seacher-西游记.html" title="西游记">西游记</a></li><li><a href="seacher-重生之门.html" title="重生之门">重生之门</a></li><li><a href="seacher-知否知否应是绿肥红瘦.html" title="知否知否应是绿肥红瘦">知否知否应是绿肥红瘦</a></li><li><a href="seacher-人民的名义.html" title="人民的名义">人民的名义</a></li><li><a href="seacher-扫黑风暴.html" title="扫黑风暴">扫黑风暴</a></li><li><a href="seacher-法医秦明.html" title="法医秦明">法医秦明</a></li><li><a href="seacher-权力的游戏第一季.html" title="权力的游戏第一季">权力的游戏第一季</a></li><li><a href="seacher-三国演义.html" title="三国演义">三国演义</a></li><li><a href="seacher-良辰好景知几何.html" title="良辰好景知几何">良辰好景知几何</a></li><li><a href="seacher-从零到一的爱情.html" title="从零到一的爱情">从零到一的爱情</a></li><li><a href="seacher-且试天下.html" title="且试天下">且试天下</a></li>		</b>
+	</ul>
+</div>
+<div class="stui-pannel stui-pannel-bg clearfix">
+	<div class="stui-pannel-box">
+	<div class="stui-pannel_hd">
+	<div class="stui-pannel__head active bottom-line clearfix">
+	<h3 class="title">今日综艺热搜排行榜</h3></div>
+	</div>
+	</div>
+	<ul class="wprm">
+		<b>
+			<li><a href="seacher-梦华录.html" title="梦华录">梦华录</a></li><li><a href="seacher-牛郎织女.html" title="牛郎织女">牛郎织女</a></li><li><a href="seacher-加油妈妈.html" title="加油妈妈">加油妈妈</a></li><li><a href="seacher-传家.html" title="传家">传家</a></li><li><a href="seacher-林深见鹿.html" title="林深见鹿">林深见鹿</a></li><li><a href="seacher-警察荣誉.html" title="警察荣誉">警察荣誉</a></li><li><a href="seacher-法医秦明之读心者.html" title="法医秦明之读心者">法医秦明之读心者</a></li><li><a href="seacher-通天塔.html" title="通天塔">通天塔</a></li><li><a href="seacher-甄嬛传.html" title="甄嬛传">甄嬛传</a></li><li><a href="seacher-回廊亭.html" title="回廊亭">回廊亭</a></li><li><a href="seacher-二进制恋爱.html" title="二进制恋爱">二进制恋爱</a></li><li><a href="seacher-斗罗大陆.html" title="斗罗大陆">斗罗大陆</a></li><li><a href="seacher-赘婿.html" title="赘婿">赘婿</a></li><li><a href="seacher-人世间.html" title="人世间">人世间</a></li><li><a href="seacher-暗夜行者.html" title="暗夜行者">暗夜行者</a></li><li><a href="seacher-斗破苍穹.html" title="斗破苍穹">斗破苍穹</a></li><li><a href="seacher-说英雄谁是英雄.html" title="说英雄谁是英雄">说英雄谁是英雄</a></li><li><a href="seacher-璀璨的你.html" title="璀璨的你">璀璨的你</a></li><li><a href="seacher-黑袍纠察队第一季.html" title="黑袍纠察队第一季">黑袍纠察队第一季</a></li><li><a href="seacher-西游记.html" title="西游记">西游记</a></li><li><a href="seacher-重生之门.html" title="重生之门">重生之门</a></li><li><a href="seacher-知否知否应是绿肥红瘦.html" title="知否知否应是绿肥红瘦">知否知否应是绿肥红瘦</a></li><li><a href="seacher-人民的名义.html" title="人民的名义">人民的名义</a></li><li><a href="seacher-扫黑风暴.html" title="扫黑风暴">扫黑风暴</a></li><li><a href="seacher-法医秦明.html" title="法医秦明">法医秦明</a></li><li><a href="seacher-权力的游戏第一季.html" title="权力的游戏第一季">权力的游戏第一季</a></li><li><a href="seacher-三国演义.html" title="三国演义">三国演义</a></li><li><a href="seacher-良辰好景知几何.html" title="良辰好景知几何">良辰好景知几何</a></li><li><a href="seacher-从零到一的爱情.html" title="从零到一的爱情">从零到一的爱情</a></li><li><a href="seacher-且试天下.html" title="且试天下">且试天下</a></li>		</b>
+	</ul>
+</div>
+	</div>
+</div>
+<div class="stui-foot clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-pd text-center masked">
+			<p>MM影院源码程序仅供PHP学习使用，禁止用于运营非法盈利<br />
+MM影院不承担任何由于个人原因非法运盈所引起的争议和法律责任<br />
+本网站内容收集于互联网，本站只提供web页面服务,并不提供影片资源存储录制、上传,播放功能<br />
+Copyright &copy;&nbsp; MM影视 版权所有</p>
+			<p class="text-center"></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="footer" class="border-t hidden-lg hidden-md" >
+<ul class="flex-wrap" style="font-weight:bold">
+		<a class="flex-con paiban " href="/index.html"><li onclick="randomSwitchBtn(this);">首页</li></a>
+		<a class="flex-con paiban " href="/movie_____ranklatest_1.html"><li onclick="randomSwitchBtn(this);">电影</li></a>
+		<a class="flex-con paiban " href="/hall.html"><li onclick="randomSwitchBtn(this);">大厅</li></a>
+		<a class="flex-con paiban " href="/fuli.html"><li onclick="randomSwitchBtn(this);">福利</li></a>
+		<a class="flex-con paiban " href="/ucenter"><li onclick="randomSwitchBtn(this);">我的</li></a>	</ul>
+</div>
+	<ul class="stui-extra clearfix">
+		<li class="hidden-xs"><a class="backtop" href="javascript:scroll(0,0)" style="display: block;"><i class="icon iconfont icon-less"></i></a></li>
+		<li class="visible-xs"><a class="open-share" href="javascript:;"><i class="icon iconfont icon-share"></i></a></li>
+		<li class="hidden-xs"><span><i class="icon iconfont icon-qrcode"></i></span>
+		<div class="sideslip">
+			<div class="col-pd  text-center">
+			<img width="150" height="150" class="qrcode">
+			<p class="text-center font-12">扫码用手机访问</p>
+			</div>
+		</div>
+		</li>
+		<li title="会员中心"><a class="open-share" href="/ucenter"><i class="icon iconfont icon-smile"></i></a></li>
+		<li><a href="/book.html"><i class="icon iconfont icon-comments"></i></a></li>
+	</ul>
+</div>
+</body>
+</html>
