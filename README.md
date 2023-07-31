@@ -7,7 +7,9 @@ Nginx/Apache
 二、安装步骤（以宝塔为例）
 
 1、安装php7.3及扩展
+
 fileinfo  opcache
+
 2、创建网站
 
 3、设置伪静态规则
