@@ -31,7 +31,7 @@ MKCMS v7.3伪静态规则参见 伪静态规则.txt
 安装完毕后登陆后台，设置网址和基本信息后，更新缓存！更新缓存！更新缓存！重要的事情说3次！
 
 
-'''txt
+```yaml
 # 伪静态规则
 
 Nginx伪静态：
@@ -150,4 +150,4 @@ RewriteRule ^movie_(.*)_(.*)_(.*)_(.*)_(.*)_(.*).html$ movie.php?cat=$1&year=$2&
 RewriteRule ^tv_(.*)_(.*)_(.*)_(.*)_(.*)_(.*).html$ tv.php?cat=$1&year=$2&area=$3&act=$4&rank=$5&pageno=$6
 RewriteRule ^dongman_(.*)_(.*)_(.*)_(.*)_(.*).html$ dongman.php?cat=$1&year=$2&area=$3&rank=$4&pageno=$5
 RewriteRule ^zongyi_(.*)_(.*)_(.*)_(.*)_(.*).html$ zongyi.php?cat=$1&act=$2&area=$3&rank=$4&pageno=$5
-'''
+```
